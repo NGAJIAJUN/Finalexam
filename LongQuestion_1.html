@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vanue Approval Form</title>
+</head>
+
+<style>
+	body{
+     background-color: snow;
+	}
+	.icon{
+		margin-top: 30px;
+       margin-left: auto;
+       margin-right: auto;
+      max-width: 100%;
+      text-align: center;
+	}
+	.form
+	{
+		
+	}
+	.form h1
+	{
+		margin-top: -50px;
+		text-align: center;
+	}
+	.form h6
+	{
+      text-align: right;
+
+	}
+	.A table, tr, td, input,h3
+	{
+		margin-top: 20px;
+     
+      margin-bottom: 20px;
+	}
+	#line
+	{
+		border-bottom: 1px solid black;
+	}
+	.container
+	{
+		border: 1px solid black;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.B{
+		font-size: 8px;
+		font-family: Arial;
+		border:none;
+	}
+	.B input{
+		text-decoration: underline;
+		border-bottom: 1px solid black;
+		width: 98%;
+	}
+</style>
+
+
+<script>
+	function display()
+	{
+		dispWin = window.open('','NewWin', 'toolbar=no, status=no, width=300, height=200')
+		message = "<ul><li><strong>Venue:</strong>"+ document.form1.venue.value;
+		message += "<li><strong>Name:</strong>"+ document.form1.name.value;
+		message += "<li><strong>Phone:</strong>" + document.form1.phone.value;
+		message += "<li><strong>Apply from:</strong>" + document.form1.apply.value;
+		message += "<li><strong>Event:</strong>" + document.form1.Event.value;
+		message += "<li><strong>Date:</strong>" + document.form1.date.value;
+		message += "<li><strong>Participants:</strong>" + document.form1.Participants.value + "</ul>";
+		dispWin.document.write(message);
+	}
+</script>
+
+<body>
+    <center><img src="images/3.png" class="icon"></center><br><br><br><br>
+	<div class="form">
+		<h1>Venue Approval Form</h1>\
+	</div>
+	<div class="container">
+	
+
+<form name="form1" method="get" action="">
+	
+		<div class="A"> 
+		<h3>A.Venue to be approved:</h3>
+
+		
+		<input type="radio" name="venue" value="Main Auditorium">Main  Auditorium
+		<input type="radio" name="venue" value="Auditorium A">Auditorium A<br>
+        <input type="radio" name="venue" value="Meeting Room 125">Meeting Room 125
+		<input type="radio" name="venue" value="Hua Yuan">Hua Yuan<br>
+		<input type="radio" name="venue" value="Lecture Halls">Lecture Halls(2C,2D,2E,2F,2G,2H,3E,3F)<br>
+       
+		<input type="radio" name="venue" value="LG Stage">LG Stage
+	</div>
+	
+
+	<div id="line"></div>
+
+	<div class="B">
+	<h1>B.Applicant's Name -<br><input type="text" name="name" required></h1><br>
+
+	<h1>C.Phone-Number -<br><input type="number" name="phone" required></h1><br>
+
+	<h1>D.Apply from -<br><input type="text" name="apply" required></h1><br>
+
+	<h1>E.Event -<br><input type="text" name="Event" required></h1><br>
+
+	<h1>F.Date/Time -<br><input type="date" name="date" required></h1><br>
+
+	<h1>G.No of Participants -<br><u><input type="number" name="Participants" required></u></h1><br>
+
+	</div>
+	
+<center><input type="button" name="Display" value="Submit" required onclick="display();" /><input type="reset" name="Reset"></center>
+
+
+</form>
+
+
+</body>
+</html>

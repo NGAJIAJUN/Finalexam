@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pizza Shop 2.0</title>
+</head>
+
+<style>
+	table,tr,th,td
+	{
+		border:1px solid black;
+	}
+</style>
+
+<body>
+	<table>
+	<tr>
+		<th colspan="2" width="300em;">Pizza Shop 2.0</th>
+	</tr>
+
+	<tr>
+		<td colspan="1">Name</td>
+		<td colspan="1"><input type="text" name="Name" value=""></td>
+	</tr>
+
+	<tr>
+		<td colspan="1">Pizza Topping</td>
+		<td><input type="radio" name="topping" value="Supreme">Supreme<br/>
+		<input type="radio" name="topping" value="Vegetarion">Vegetarion<br/>
+		<input type="radio" name="topping" value="Haiwaiian">Haiwaiian</td>
+	</tr>
+
+
+    <tr>
+    	<td>Pizza Sauce</td>
+    	<td>
+    		<select name="sauce">
+    		<option value="Sauce1">Tomato</option>
+    		<option value="Sauce2">Chili</option>
+    		<option value="Sauce3">Mayonnaise</option>
+    	    </select>
+       </td>
+    </tr>
+
+    <tr>
+    	<td>Optional Extras</td>
+    	<td><input type="checkbox" name="optional" value="Extracheese">Extra Cheese
+    	    <input type="checkbox" name="optional" value="Gluten Free Base"> Gluten Free Base</td>
+    </tr>
+
+    <tr>
+    	<td colspan="2">Delivery Instruction:<br/>
+           <textarea name="comments" rows="2" cols="20"></textarea>
+    	</td>
+    </tr>
+
+    <tr>
+    	<td colspan="2"><button type="submit">Send my Order</button></td>
+    </tr>
+
+</table>
+</body>
+</html>
